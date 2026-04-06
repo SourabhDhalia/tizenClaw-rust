@@ -32,6 +32,9 @@ You should have the following available before you begin:
 It also helps to know the target device serial if more than one emulator or
 device is connected.
 
+If your target is a Tizen TV / DTV device that uses `ssh` instead of `sdb`,
+see [DTV_USAGE.md](DTV_USAGE.md) for the manual SSH-based deployment flow.
+
 ## Core Command: `deploy.sh`
 
 The root `deploy.sh` script is the operational entry point for the project.
@@ -89,6 +92,9 @@ If you need to pin deployment to a specific target:
 ```bash
 ./deploy.sh -a x86_64 -d emulator-26101
 ```
+
+For SSH-based Tizen TV / DTV deployments, use
+[DTV_USAGE.md](DTV_USAGE.md) instead of the `sdb`-driven `deploy.sh` flow.
 
 ## Service Lifecycle
 

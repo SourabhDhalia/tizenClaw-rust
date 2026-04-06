@@ -108,6 +108,7 @@ docs/*
 !docs/tizenclaw_cli_pinchbench_guide_ko.md
 !docs/STRUCTURE.md
 !docs/USAGE.md
+!docs/DTV_USAGE.md
 !data/docs/
 !data/docs/**
 

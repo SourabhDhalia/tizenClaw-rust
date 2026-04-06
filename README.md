@@ -247,6 +247,11 @@ Useful variants:
 This path is the canonical Tizen validation flow. It handles build, packaging,
 deployment, and service restart on the target.
 
+These examples assume an `sdb`-style target such as the emulator or a device
+that uses the repository's current `deploy.sh` flow. If you are deploying to a
+Tizen TV / DTV target over `ssh` and `scp`, see
+[`docs/DTV_USAGE.md`](docs/DTV_USAGE.md) for the manual SSH-based workflow.
+
 ## Workspace
 
 TizenClaw is a Rust workspace with clearly separated runtime roles:
@@ -266,6 +271,7 @@ Additional repository docs:
 
 - [Structure Guide](docs/STRUCTURE.md)
 - [Usage Guide](docs/USAGE.md)
+- [DTV Usage Guide](docs/DTV_USAGE.md)
 
 ## Status
 
