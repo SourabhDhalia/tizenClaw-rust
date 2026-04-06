@@ -9,6 +9,9 @@ build_local/
 *.rpm
 *.so
 *.so.*
+!vendor/wit-bindgen/src/rt/wit_bindgen_cabi_realloc.o
+!vendor/wit-bindgen/src/rt/wit_bindgen_cabi_wasip3.o
+!vendor/wit-component/libdl.so
 
 # Protobuf / gRPC generated code
 *.pb.cc
@@ -33,6 +36,8 @@ debugsources.list
 documentation.list
 elfbins.list
 *.manifest
+!vendor/nix/test/test_kmod/hello_mod/Makefile
+!vendor/r-efi/Makefile
 
 # IDE
 .vscode/
