@@ -1,0 +1,57 @@
+{
+  "active_backend": "gemini",
+  "fallback_backends": ["anthropic", "openai", "ollama"],
+  "benchmark": {
+    "pinchbench": {
+      "actual_tokens": {
+        "prompt": 0,
+        "completion": 0,
+        "total": 0
+      },
+      "target": {
+        "score": 0.8,
+        "summary": "Match the target PinchBench run.",
+        "suite": "all"
+      }
+    }
+  },
+  "backends": {
+    "gemini": {
+      "api_key": "",
+      "model": "gemini-2.5-flash",
+      "temperature": 0.7,
+      "max_tokens": 4096
+    },
+    "openai": {
+      "api_key": "",
+      "model": "gpt-4o",
+      "endpoint": "https://api.openai.com/v1"
+    },
+    "anthropic": {
+      "api_key": "",
+      "model": "claude-sonnet-4-20250514",
+      "endpoint": "https://api.anthropic.com/v1",
+      "temperature": 0.7,
+      "max_tokens": 4096
+    },
+    "xai": {
+      "api_key": "",
+      "model": "grok-3",
+      "endpoint": "https://api.x.ai/v1"
+    },
+    "ollama": {
+      "model": "llama3",
+      "endpoint": "http://localhost:11434"
+    }
+  },
+  "features": {
+    "image_generation": {
+      "provider": "openai",
+      "api_key": "",
+      "model": "gpt-image-1",
+      "endpoint": "https://api.openai.com/v1",
+      "size": "1024x1024",
+      "background": "auto"
+    }
+  }
+}
